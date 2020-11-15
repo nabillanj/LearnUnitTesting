@@ -16,6 +16,7 @@ class LearnUnitTestingTests: XCTestCase {
     // it means your code 100% coverage by unit test
     // if you dont create all possibilities that might be happen on that functions
     // it means, maybe app will throw error. but still coverage 100%:)
+    
 
     // REQUIREMENT:
     // Naming: func test<System Under Test>_<Conditiion or State Change>_<Expected Result>()
