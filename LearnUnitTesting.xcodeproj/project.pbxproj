@@ -15,7 +15,9 @@
 		AB31FCCE256170BB001B1D74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB31FCCC256170BB001B1D74 /* LaunchScreen.storyboard */; };
 		AB31FCD9256170BC001B1D74 /* LearnUnitTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31FCD8256170BC001B1D74 /* LearnUnitTestingTests.swift */; };
 		AB31FCE4256170BC001B1D74 /* LearnUnitTestingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31FCE3256170BC001B1D74 /* LearnUnitTestingUITests.swift */; };
-		AB53CF1325625CCA00FFA86F /* SignupFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53CF1225625CCA00FFA86F /* SignupFormModelValidator.swift */; };
+		AB53CF1325625CCA00FFA86F /* SignupFormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53CF1225625CCA00FFA86F /* SignupFormModelValidatorTests.swift */; };
+		AB53CF162562834F00FFA86F /* SignupFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53CF152562834F00FFA86F /* SignupFormModelValidator.swift */; };
+		AB53CF1825628BEE00FFA86F /* SignupConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53CF1725628BEE00FFA86F /* SignupConstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +52,9 @@
 		AB31FCDF256170BC001B1D74 /* LearnUnitTestingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnUnitTestingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB31FCE3256170BC001B1D74 /* LearnUnitTestingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnUnitTestingUITests.swift; sourceTree = "<group>"; };
 		AB31FCE5256170BC001B1D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB53CF1225625CCA00FFA86F /* SignupFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidator.swift; sourceTree = "<group>"; };
+		AB53CF1225625CCA00FFA86F /* SignupFormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidatorTests.swift; sourceTree = "<group>"; };
+		AB53CF152562834F00FFA86F /* SignupFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidator.swift; sourceTree = "<group>"; };
+		AB53CF1725628BEE00FFA86F /* SignupConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupConstant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		AB31FCC0256170B6001B1D74 /* LearnUnitTesting */ = {
 			isa = PBXGroup;
 			children = (
+				AB53CF142562833300FFA86F /* Signup */,
 				AB31FCC1256170B6001B1D74 /* AppDelegate.swift */,
 				AB31FCC3256170B6001B1D74 /* SceneDelegate.swift */,
 				AB31FCC5256170B6001B1D74 /* ViewController.swift */,
@@ -117,7 +122,7 @@
 			children = (
 				AB31FCD8256170BC001B1D74 /* LearnUnitTestingTests.swift */,
 				AB31FCDA256170BC001B1D74 /* Info.plist */,
-				AB53CF1225625CCA00FFA86F /* SignupFormModelValidator.swift */,
+				AB53CF1225625CCA00FFA86F /* SignupFormModelValidatorTests.swift */,
 			);
 			path = LearnUnitTestingTests;
 			sourceTree = "<group>";
@@ -129,6 +134,15 @@
 				AB31FCE5256170BC001B1D74 /* Info.plist */,
 			);
 			path = LearnUnitTestingUITests;
+			sourceTree = "<group>";
+		};
+		AB53CF142562833300FFA86F /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				AB53CF152562834F00FFA86F /* SignupFormModelValidator.swift */,
+				AB53CF1725628BEE00FFA86F /* SignupConstant.swift */,
+			);
+			path = Signup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +278,9 @@
 			files = (
 				AB31FCC6256170B6001B1D74 /* ViewController.swift in Sources */,
 				AB31FCC2256170B6001B1D74 /* AppDelegate.swift in Sources */,
+				AB53CF162562834F00FFA86F /* SignupFormModelValidator.swift in Sources */,
 				AB31FCC4256170B6001B1D74 /* SceneDelegate.swift in Sources */,
+				AB53CF1825628BEE00FFA86F /* SignupConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB53CF1325625CCA00FFA86F /* SignupFormModelValidator.swift in Sources */,
+				AB53CF1325625CCA00FFA86F /* SignupFormModelValidatorTests.swift in Sources */,
 				AB31FCD9256170BC001B1D74 /* LearnUnitTestingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,7 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LearnUnitTesting/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,7 +474,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LearnUnitTesting/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
