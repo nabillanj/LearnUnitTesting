@@ -8,8 +8,7 @@
 
 import UIKit
 
-class SignupFormModelValidator: NSObject {
-
+class SignupFormModelValidator: SignupModelValidatorProtocol {
 
     //TODO: Learn REGEX validation
 
